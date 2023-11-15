@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Paper/Rock/Scissor Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <div id="cards">
+            <button onclick="game('paper')"><img src="feuille-de-papier.png"></button>
+            <button onclick="game('rock')"> <img src="des-pierres.png"></button>
+            <button onclick="game('scissor')"><img src="ciseaux.png"></button>
+        </div>
+        <div id="result"></div>
+        <table class="game-history">
+            <thead>
+                <tr>
+                    <th>Partie</th>
+                    <th>Vous</th>
+                    <th>Ordinateur</th>
+                    <th>Résultat</th>
+                </tr>
+            </thead>
+            <tbody id="history-body"></tbody>
+        </table>
+    </body>
+</html>
